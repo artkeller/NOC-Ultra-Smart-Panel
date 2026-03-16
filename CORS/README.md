@@ -4,7 +4,7 @@
 
 ## 1. The core concept: Why does CORS exist?
 
-- By default, **browsers** enforce the **Same-Origin Policy (SOP)**.
+- By default, **browsers** (!) enforce the **Same-Origin Policy (SOP)**.
 
 - This prevents **scripts** from **website A** (e.g., `evil-site.com`) 
 from retrieving data from **website B** (e.g., `my-bank-account.com`) without permission 
