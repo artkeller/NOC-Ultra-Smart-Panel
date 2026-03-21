@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NOC Ultra Smart v4.7.0</title>
+<title id="head-title">NOC Ultra Smart vx.x.x</title>
 
 <style>
 :root {
@@ -76,7 +76,7 @@ canvas { background: #000; border: 1px solid #333; max-width: 280px; width: 100%
 
   <!-- Rest deines Body-Inhalts ... -->
 
-<h2 id="ui-title">NOC Ultra Smart v4.7.0</h2>
+<h2 id="ui-title">NOC Ultra Smart vx.x.x</h2>
 
 <div class="controls">
   <input id="urlInput" placeholder="https://example.com">
@@ -129,7 +129,7 @@ let intervalMs = 5000;
 const minStepMs = 200; // Mindestverzögerung zwischen Pings
 
 /* ==========================
-   UI Scheduler (Dynamisch v4.6.2)
+   UI Scheduler
 ========================== */
 let resortTimer = null;
 function triggerGreenResort(){
@@ -426,7 +426,8 @@ document.addEventListener("DOMContentLoaded", () => {
     urlInput.placeholder = t.placeholder;
     btnAdd.textContent = t.add;
     document.getElementById("ui-favs-label").textContent = t.favs;
-    document.getElementById("ui-title").textContent = `NOC Ultra Smart v4.6.2`;
+    document.getElementById("ui-title").textContent = `NOC Ultra Smart v4.7.0`;
+    document.getElementById("head-title").textContent = `NOC Ultra Smart v4.7.0`;
 
     // Bugfix: Button-Status bei Eingabe prüfen
     urlInput.addEventListener("input", () => {
@@ -534,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Erste Messung
     updateCpuMini();
 
-    // Alle 10 Sekunden (passt zu deinem Dashboard)
+    // Alle 10 Sekunden (passend zum Dashboard)
     setInterval(updateCpuMini, 10000);
   })();
   </script>
