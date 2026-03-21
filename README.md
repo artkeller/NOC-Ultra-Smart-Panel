@@ -1,4 +1,4 @@
-# NOC Ultra Smart Panel v4.4.11
+# NOC Ultra Smart Panel v4.7.0
 
 [![CRA Status](https://img.shields.io/badge/CRA-Exempt%20(pure%20OSS)-informational)](./CRA-EXEMPTION.md)
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
@@ -15,7 +15,7 @@
 
 The **NOC Ultra Smart Panel** is a high-performance tool designed for monitoring network endpoints. It provides instant visual feedback on the status of web services without the need for complex infrastructure like databases, agents, or backend servers.
 
-![NOC Ultra Smart Panel v4.4.11](images/NOC_Ultra_Smart_Panel_v4_4_11.png "NOC_Ultra_Smart_Panel_v4_4_11")
+![NOC Ultra Smart Panel v4.7.0](images/NOC_Ultra_Smart_Panel_v4_7_0.png "NOC_Ultra_Smart_Panel_v4_7_0")
 
 ### Key Capabilities
 
@@ -73,7 +73,7 @@ The panel doesn't just sort by status; it uses a weighted logic for clarity in t
 
 ## 🚀 How to use
 
-1. Save the `noc_ultra_v4_4_11.html` file locally or on a web space.
+1. Save the `noc_ultra_v4_7_0.html` file locally or on a web space.
 2. Open it in any modern web browser.
 3. Add URLs in the format `https://domain.tld`.
 4. **Favorites:** Use the ★ symbol to pin important endpoints to the top bar.
