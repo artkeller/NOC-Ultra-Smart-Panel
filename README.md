@@ -1,9 +1,9 @@
-# NOC Ultra Smart Panel v4.7.0
+# NOC Ultra Smart Panel v4.7.1.23
 
 [![CRA Status](https://img.shields.io/badge/CRA-Exempt%20(pure%20OSS)-informational)](./CRA-EXEMPTION.md)
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
 [![License](https://img.shields.io/badge/License-Apache-blue?style=flat-square)](./LICENSE)
-[![Version](https://img.shields.io/badge/Version-4.7.0-brightgreen?style=flat-square)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-4.7.1.23-brightgreen?style=flat-square)](./CHANGELOG.md)
 [![Security](https://img.shields.io/badge/Security-Policy-brightgreen?style=flat-square)](./SECURITY.md)
 
 > **Light-weight Network Operations Center Dashboard**
