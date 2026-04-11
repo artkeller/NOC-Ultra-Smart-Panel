@@ -19,17 +19,32 @@
 
 #### Root-Server
 
+- A-Server,
+- ...
+
 #### CDN
 
 #### Hyperscaler
 
-Microsoft, Amazon, Google, Cloudflare
+- Microsoft
+- Amazon
+- Google
+- Cloudflare
 
 #### Provider
 
-Hetzer, GMX
+- Hetzer
+- GMX
 
 #### Standardisierer
 
-ICANN, W3C, ISO, IEC, CEN, DIN, ETSI, IEEE
+- ICANN
+- W3C
+- ISO
+- IEC
+- CEN
+- CENELEC
+- DIN
+- ETSI
+- IEEE
 
