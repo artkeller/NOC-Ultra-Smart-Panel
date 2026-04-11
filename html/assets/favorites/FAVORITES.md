@@ -5,9 +5,6 @@
 - vorausgewählt
 - verifiziert (qualitätsgesichert)
 
--- Default
--- Groups
-
 ## Default... (10)
 
 - autoload
