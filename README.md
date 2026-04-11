@@ -1,9 +1,9 @@
-# NOC Ultra Smart Panel v4.7.1.23
+# NOC Ultra Smart Panel v4.7.5.0
 
 [![CRA Status](https://img.shields.io/badge/CRA-Exempt%20(pure%20OSS)-informational)](./CRA-EXEMPTION.md)
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
 [![License](https://img.shields.io/badge/License-Apache-blue?style=flat-square)](./LICENSE)
-[![Version](https://img.shields.io/badge/Version-4.7.1.23-brightgreen?style=flat-square)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-4.7.5.0-brightgreen?style=flat-square)](./CHANGELOG.md)
 [![Security](https://img.shields.io/badge/Security-Policy-brightgreen?style=flat-square)](./SECURITY.md)
 
 > **Light-weight Network Operations Center Dashboard**
@@ -15,7 +15,7 @@
 
 The **NOC Ultra Smart Panel** is a high-performance tool designed for monitoring network endpoints. It provides instant visual feedback on the status of web services without the need for complex infrastructure like databases, agents, or backend servers.
 
-![NOC Ultra Smart Panel v4.7.0](images/NOC_Ultra_Smart_Panel_v4_7_0.png "NOC_Ultra_Smart_Panel_v4_7_0")
+![NOC Ultra Smart Panel v4.7.5.0](assets/images/NOC_Ultra_Smart_Panel_v4_7_5_0.png "NOC_Ultra_Smart_Panel_v4.7.5.0")
 
 ### Key Capabilities
 
