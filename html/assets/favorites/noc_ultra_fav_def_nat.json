@@ -1,52 +1,52 @@
 [
-  "https://www.spiegel.de",              # DE
-  "https://www.lemonde.fr",           # FR
-  "https://www.repubblica.it",           # IT
-  "https://elpais.com",                  # ES
-  "https://www.publico.pt",              # PT
-  "https://www.nrc.nl",                  # NL
-  "https://www.standaard.be",           # BE
-  "https://www.svt.se",                  # SE
-  "https://www.nrk.no",                  # NO
-  "https://www.dr.dk",                   # DK
-  "https://www.hs.fi",                   # FI
-  "https://www.tvp.pl",                  # PL
-  "https://www.seznam.cz",               # CZ
-  "https://www.orf.at",                  # AT
-  "https://www.20min.ch",                # CH
-  "https://www.bbc.co.uk",               # UK
-  "https://www.rte.ie",                  # IE
-  "https://www.nytimes.com",             # US
-  "https://www.cbc.ca",                  # CA
-  "https://www.milenio.com ",            # MX
-  "https://www.globo.com",               # BR
-  "https://www.lanacion.com.ar",         # AR
-  "https://www.eltiempo.com",            # CO
-  "https://www.larepublica.pe",          # PE
-  "https://www.emol.com",                # CL
-  "https://www.elobservador.com.uy",     # UY
-  "https://www.latercera.com",           # CL alt redundancy
-  "https://www.news24.com",              # ZA
-  "https://www.nation.africa",           # KE
-  "https://www.egypttoday.com",          # EG
-  "https://www.dailynation.co.ke",       # KE alt
-  "https://www.thehindu.com",            # IN
-  "https://www.hindustantimes.com",      # IN alt
-  "https://www.dawn.com",                # PK
-  "https://www.bdnews24.com",            # BD
-  "https://www.channelnewsasia.com",     # SG
-  "https://www.thestar.com.my",          # MY
-  "https://www.bangkokpost.com",         # TH
-  "https://www.vnexpress.net",           # VN
-  "https://www.philstar.com ",           # PH
-  "https://www.scmp.com",                # HK
-  "https://www.asahi.com",              # JP
-  "https://www.koreatimes.co.kr",        # KR
-  "https://www.abc.net.au",              # AU
-  "https://www.stuff.co.nz",             # NZ
-  "https://www.fijitimes.com",           # FJ
-  "https://www.arabnews.com",            # SA
-  "https://www.haaretz.com",             # IL
-  "https://www.khaleejtimes.com",        # AE
-  "https://www.aa.com.tr"               # TR
+  "https://www.spiegel.de",
+  "https://www.lemonde.fr",
+  "https://www.repubblica.it",
+  "https://elpais.com",
+  "https://www.publico.pt",
+  "https://www.nrc.nl",
+  "https://www.standaard.be",
+  "https://www.svt.se",
+  "https://www.nrk.no",
+  "https://www.dr.dk",
+  "https://www.hs.fi",
+  "https://www.tvp.pl",
+  "https://www.seznam.cz",
+  "https://www.orf.at",
+  "https://www.20min.ch",
+  "https://www.bbc.co.uk",
+  "https://www.rte.ie",
+  "https://www.nytimes.com",
+  "https://www.cbc.ca",
+  "https://www.milenio.com ",
+  "https://www.globo.com",
+  "https://www.lanacion.com.ar",
+  "https://www.eltiempo.com",
+  "https://www.larepublica.pe",
+  "https://www.emol.com",
+  "https://www.elobservador.com.uy",
+  "https://www.latercera.com",
+  "https://www.news24.com",
+  "https://www.nation.africa",
+  "https://www.egypttoday.com",
+  "https://www.dailynation.co.ke",
+  "https://www.thehindu.com",
+  "https://www.hindustantimes.com",
+  "https://www.dawn.com",
+  "https://www.bdnews24.com",
+  "https://www.channelnewsasia.com",
+  "https://www.thestar.com.my",
+  "https://www.bangkokpost.com",
+  "https://www.vnexpress.net",
+  "https://www.philstar.com ",
+  "https://www.scmp.com",
+  "https://www.asahi.com",
+  "https://www.koreatimes.co.kr",
+  "https://www.abc.net.au",
+  "https://www.stuff.co.nz",
+  "https://www.fijitimes.com",
+  "https://www.arabnews.com",
+  "https://www.haaretz.com",
+  "https://www.khaleejtimes.com", 
+  "https://www.aa.com.tr"
 ]
