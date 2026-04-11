@@ -31,5 +31,5 @@ Hetzer, GMX
 
 #### Standardisierer
 
-ICANN, W3C, ISO, IEC, CEN, DIN, ETSI
+ICANN, W3C, ISO, IEC, CEN, DIN, ETSI, IEEE
 
