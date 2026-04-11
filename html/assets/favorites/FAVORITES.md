@@ -1,17 +1,17 @@
 # Favorites
 
-# Profiles
+## Profiles
 
 - vorausgewählt
 - verifiziert (qualitätsgesichert)
 
-## Default... (10)
+### Default... (10)
 
 - autoload
 - funktionieren immer im browser
 - repräsentieren "das Internet"
 
-## Groups
+### Groups
 
 - selected
 - repräsentieren bestimmte typen (CDN, Provider, ...)
