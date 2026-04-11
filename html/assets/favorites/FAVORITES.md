@@ -8,14 +8,15 @@
 ### Default... (10)
 
 - autoload
-- funktionieren immer im browser
+- funktionieren immer im Browser
 - repräsentieren "das Internet"
 
 ### Groups
 
-- selected
-- repräsentieren bestimmte typen (CDN, Provider, ...)
-- funktionieren immer im browser
+- selected load
+- funktionieren immer im Browser
+- repräsentieren bestimmte Typen (CDN, Provider, ...)
+
 
 #### Root-Server
 
@@ -31,7 +32,7 @@
 - Google
 - Cloudflare
 
-#### Provider
+#### Content-Provider
 
 - Hetzer
 - GMX
@@ -47,4 +48,10 @@
 - DIN
 - ETSI
 - IEEE
+
+### Global Sentinel Set
+
+- aus allen o.g. die stärkesten 3..5 (Summe)
+
+
 
