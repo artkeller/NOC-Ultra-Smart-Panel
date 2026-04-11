@@ -1,10 +1,10 @@
 # Languages
 
-Nachfolgend die Namen aller 28 Sprachdateien (JSON-Format), die auf dem Server im gleichen Verzeichnis wie die HTML-Datei liegen müssen. 
+Nachfolgend die Namen aller 27 Sprachdateien (JSON-Format), die auf dem Server im gleichen Verzeichnis wie die HTML-Datei liegen müssen. 
 
 ## Dateinamen 
 
- Version 4.7.5.0   -> Version 4.7.5.1
+ Version 4.7.5.0   -> Version 4.7.5.1 (neues i10n-schema)
 - language_de.json -> noc_ultra_i10n_de.json,
 - language_en.json -> noc_ultra_i10n_en.json,
 - language_bg.json -> noc_ultra_i10n_bg.json,
