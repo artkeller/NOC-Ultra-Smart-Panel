@@ -21,5 +21,15 @@
 
 #### CDN
 
+#### Hyperscaler
+
+Microsoft, Amazon, Google, Cloudflare
+
 #### Provider
+
+Hetzer, GMX
+
+#### Standardisierer
+
+ICANN, W3C, ISO, IEC, CEN, DIN, ETSI
 
