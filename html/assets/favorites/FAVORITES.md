@@ -184,8 +184,9 @@ await Promise.all([
 
 ---
 
-Perfekt – jetzt bauen wir daraus ein **wirklich robustes Monitoring-System**.
-Ich gebe dir eine **kompakte, produktionsnahe TS-Implementierung**, die drei Dinge sauber integriert:
+# **Robustes Monitoring-System**.
+
+**kompakte, produktionsnahe TS-Implementierung**
 
 * 🌐 Geo-Gewichtung (Kontinente > Länder > Infra feinjustiert)
 * 🔁 Adaptive Retry (smart statt blind)
@@ -195,7 +196,7 @@ Ich gebe dir eine **kompakte, produktionsnahe TS-Implementierung**, die drei Din
 
 # 🌐 1. Architektur (kurz & klar)
 
-Wir erweitern dein Modell:
+Erweiterung des Modells:
 
 ```ts
 type Node = {
