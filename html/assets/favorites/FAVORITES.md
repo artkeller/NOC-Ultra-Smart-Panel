@@ -16,4 +16,10 @@
 - selected
 - repräsentieren bestimmte typen (CDN, Provider, ...)
 - funktionieren immer im browser
- 
+
+#### Root-Server
+
+#### CDN
+
+#### Provider
+
