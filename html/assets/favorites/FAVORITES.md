@@ -2,6 +2,6 @@
 
 ## Default... (10)
 
--> autoload
--> funktionieren immer im browser
--> repräsentieren "das Internet"
+- autoload
+- funktionieren immer im browser
+- repräsentieren "das Internet"
