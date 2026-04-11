@@ -1,1 +1,12 @@
-
+[
+	"https://1.1.1.1",
+	"https://dns.google/resolve",
+	"https://aws.amazon.com",
+	"https://www.cloudflare.com/cdn-cgi/trace",
+	"https://api.fastly.com/public-ip-list",
+	"https://status.atlassian.com",
+	"https://www.digitalocean.com",
+	"https://www.github.com",
+	"https://www.linode.com",
+	"https://www.hetzner.com"
+]
