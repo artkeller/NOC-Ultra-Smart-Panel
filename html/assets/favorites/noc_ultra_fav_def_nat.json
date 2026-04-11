@@ -1,0 +1,52 @@
+[
+  "https://www.spiegel.de",              # DE
+  "https://www.lemonde.fr",           # FR
+  "https://www.repubblica.it",           # IT
+  "https://elpais.com",                  # ES
+  "https://www.publico.pt",              # PT
+  "https://www.nrc.nl",                  # NL
+  "https://www.standaard.be",           # BE
+  "https://www.svt.se",                  # SE
+  "https://www.nrk.no",                  # NO
+  "https://www.dr.dk",                   # DK
+  "https://www.hs.fi",                   # FI
+  "https://www.tvp.pl",                  # PL
+  "https://www.seznam.cz",               # CZ
+  "https://www.orf.at",                  # AT
+  "https://www.20min.ch",                # CH
+  "https://www.bbc.co.uk",               # UK
+  "https://www.rte.ie",                  # IE
+  "https://www.nytimes.com",             # US
+  "https://www.cbc.ca",                  # CA
+  "https://www.milenio.com ",            # MX
+  "https://www.globo.com",               # BR
+  "https://www.lanacion.com.ar",         # AR
+  "https://www.eltiempo.com",            # CO
+  "https://www.larepublica.pe",          # PE
+  "https://www.emol.com",                # CL
+  "https://www.elobservador.com.uy",     # UY
+  "https://www.latercera.com",           # CL alt redundancy
+  "https://www.news24.com",              # ZA
+  "https://www.nation.africa",           # KE
+  "https://www.egypttoday.com",          # EG
+  "https://www.dailynation.co.ke",       # KE alt
+  "https://www.thehindu.com",            # IN
+  "https://www.hindustantimes.com",      # IN alt
+  "https://www.dawn.com",                # PK
+  "https://www.bdnews24.com",            # BD
+  "https://www.channelnewsasia.com",     # SG
+  "https://www.thestar.com.my",          # MY
+  "https://www.bangkokpost.com",         # TH
+  "https://www.vnexpress.net",           # VN
+  "https://www.philstar.com ",           # PH
+  "https://www.scmp.com",                # HK
+  "https://www.asahi.com",              # JP
+  "https://www.koreatimes.co.kr",        # KR
+  "https://www.abc.net.au",              # AU
+  "https://www.stuff.co.nz",             # NZ
+  "https://www.fijitimes.com",           # FJ
+  "https://www.arabnews.com",            # SA
+  "https://www.haaretz.com",             # IL
+  "https://www.khaleejtimes.com",        # AE
+  "https://www.aa.com.tr"               # TR
+]
