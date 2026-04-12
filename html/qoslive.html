@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Live QoS Dashboard</title>
+<style>
+    body {
+        font-family: Arial;
+        background: #111;
+        color: #eee;
+        margin: 30px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+        background: #222;
+        color: #0f0;
+        border: 1px solid #444;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        margin: 10px 0;
+        background: #0a84ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    td, th {
+        padding: 8px;
+        border-bottom: 1px solid #333;
+        text-align: left;
+    }
+
+    .good { color: #4caf50; }
+    .warn { color: #ffb300; }
+    .bad  { color: #ef5350; }
+</style>
+</head>
+<body>
+
+<h1>🌐 Live QoS Dashboard</h1>
+
+<p>URLs (eine pro Zeile):</p>
+<textarea id="urls">
+https://example.com
+https://jsonplaceholder.typicode.com/posts
+</textarea>
+
+<br>
+<label>Requests pro URL:</label>
+<input id="count" type="number" value="20" />
+
+<br>
+<button onclick="runTest()">Start Test</button>
+
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>p50</th>
+<th>p95</th>
+<th>p99</th>
+<th>Tail Ratio</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="results"></tbody>
+</table>
+
+<script>
+async function measureLatency(url) {
+    const start = performance.now();
+
+    try {
+        await fetch(url, { cache: "no-store" });
+    } catch (e) {
+        return null;
+    }
+
+    return performance.now() - start;
+}
+
+function percentile(arr, p) {
+    const sorted = [...arr].sort((a, b) => a - b);
+    const index = Math.ceil(p * sorted.length) - 1;
+    return sorted[Math.max(0, index)];
+}
+
+function analyze(latencies) {
+    const p50 = percentile(latencies, 0.5);
+    const p95 = percentile(latencies, 0.95);
+    const p99 = percentile(latencies, 0.99);
+
+    const tailRatio = p99 / p50;
+
+    let status = "Healthy";
+    let cls = "good";
+
+    if (tailRatio > 10) {
+        status = "Critical";
+        cls = "bad";
+    } else if (tailRatio > 5) {
+        status = "Warning";
+        cls = "warn";
+    }
+
+    return { p50, p95, p99, tailRatio, status, cls };
+}
+
+async function testURL(url, count) {
+    const latencies = [];
+
+    for (let i = 0; i < count; i++) {
+        const t = await measureLatency(url);
+        if (t !== null) latencies.push(t);
+    }
+
+    return latencies;
+}
+
+async function runTest() {
+    const urls = document.getElementById("urls").value
+        .split("\n")
+        .map(u => u.trim())
+        .filter(u => u);
+
+    const count = parseInt(document.getElementById("count").value);
+
+    const table = document.getElementById("results");
+    table.innerHTML = "";
+
+    for (let url of urls) {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>${url}</td><td colspan="5">Running...</td>`;
+        table.appendChild(row);
+
+        const latencies = await testURL(url, count);
+
+        if (latencies.length === 0) {
+            row.innerHTML = `<td>${url}</td><td colspan="5">CORS/Error</td>`;
+            continue;
+        }
+
+        const r = analyze(latencies);
+
+        row.innerHTML = `
+            <td>${url}</td>
+            <td>${r.p50.toFixed(1)} ms</td>
+            <td>${r.p95.toFixed(1)} ms</td>
+            <td>${r.p99.toFixed(1)} ms</td>
+            <td>${r.tailRatio.toFixed(2)}</td>
+            <td class="${r.cls}">${r.status}</td>
+        `;
+    }
+}
+</script>
+
+</body>
+</html>
