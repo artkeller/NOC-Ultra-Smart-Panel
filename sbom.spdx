@@ -20,7 +20,7 @@ PackageSummary: Minimale i18n-Logik ohne externe Abhängigkeiten.
 PackageComment: Händisch auditierter Code zur Erfüllung der CRA-Sorgfaltspflicht.
 
 ##### Paket 2: Die l10n-Daten (Die Sprach-Assets)
-PackageName: oc-ultra-l10n-data
+PackageName: noc-ultra-l10n-data
 SPDXID: SPDXRef-Package-l10n-Assets
 PackageVersion: 1.0.0
 PackageFileName: ./assets/l10n/noc_ultra_l10_<CODE>.json
