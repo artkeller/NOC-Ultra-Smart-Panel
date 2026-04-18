@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Pfade zu deinen Dateien
+I18N_FILE="./html/noc_ultra_v4_7_5_0.html"
+SPDX_FILE="./bom.spdx"
+
+# 1. SHA1-Hash generieren (SPDX Standard nutzt oft SHA1 für den VerificationCode)
+# Wir nehmen nur den Hash-Wert, ohne den Dateinamen
+NEW_HASH=$(sha1sum "$I18N_FILE" | awk '{ print $1 }')
+
+# 2. Den alten Hash im SPDX-File durch den neuen ersetzen
+# Nutzt sed, um die Zeile mit 'PackageVerificationCode:' zu finden und zu updaten
+if grep -q "PackageVerificationCode:" "$SPDX_FILE"; then
+    sed -i "s/PackageVerificationCode: .*/PackageVerificationCode: $NEW_HASH/" "$SPDX_FILE"
+    echo "✅ SPDX aktualisiert: i18n-Core Hash ist jetzt $NEW_HASH"
+else
+    echo "❌ Fehler: 'PackageVerificationCode:' wurde in $SPDX_FILE nicht gefunden."
+fi
+
+# 3. Optional: Zeitstempel aktualisieren
+CURRENT_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+sed -i "s/Created: .*/Created: $CURRENT_DATE/" "$SPDX_FILE"
