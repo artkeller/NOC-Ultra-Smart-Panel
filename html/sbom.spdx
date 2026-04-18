@@ -4,7 +4,7 @@ DataLicense: CC0-1.0
 DocumentNamespace: https://github.com/NOC-Ultra-Smart-Panel/
 DocumentName: Project-SBOM
 Creator: Person: Thomas Walloschke artkeller@gmx.de
-Created: 2024-05-22T10:00:00Z
+Created: 2026-04-18T11:31:00Z
 
 ##### Paket 1: noc-ultra
 PackageName: noc-ultra-i18n-engine-embedded-code
