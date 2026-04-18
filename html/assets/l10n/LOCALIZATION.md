@@ -1,4 +1,4 @@
-# LOCALISATION (l10n)
+# LOCALIZATION (l10n)
 
 Nachfolgend die Namen aller 27 Sprachdateien (JSON-Format), die auf dem Server im gleichen Verzeichnis wie die HTML-Datei liegen müssen. 
 
