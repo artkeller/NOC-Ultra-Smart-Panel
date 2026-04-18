@@ -1,0 +1,35 @@
+##### Dokument-Header
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+DocumentNamespace: https://dein-projekt.de
+DocumentName: Project-BackToRoots-SBOM
+Creator: Person: Dein Name oder Team
+Created: 2024-05-22T10:00:00Z
+
+##### Paket 1: Der i18n-Core (Dein auditierter Code)
+PackageName: custom-i18n-engine
+SPDXID: SPDXRef-Package-i18n-Core
+PackageVersion: 1.0.0
+PackageFileName: ./src/core/i18n.js
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageVerificationCode: [Hash-deiner-Datei]
+PackageLicenseConcluded: MIT
+PackageCopyrightText: <Copyright Dein Unternehmen/Name>
+PackageSummary: Minimale i18n-Logik ohne externe Abhängigkeiten.
+PackageComment: Händisch auditierter Code zur Erfüllung der CRA-Sorgfaltspflicht.
+
+##### Paket 2: Die l10n-Daten (Die Sprach-Assets)
+PackageName: project-l10n-data
+SPDXID: SPDXRef-Package-l10n-Assets
+PackageVersion: 1.0.0
+PackageFileName: ./assets/l10n/
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: CC-BY-4.0
+PackageCopyrightText: <Copyright Dein Unternehmen/Name>
+PackageSummary: Lokalisierungs-Strings (JSON/JS) für DE und EN.
+
+##### Beziehungen (Relationship)
+Relationship: SPDXRef-Document DESCRIBES SPDXRef-Package-i18n-Core
+Relationship: SPDXRef-Package-i18n-Core CONTAINS SPDXRef-Package-l10n-Assets
