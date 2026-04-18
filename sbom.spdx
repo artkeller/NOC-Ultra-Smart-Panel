@@ -13,7 +13,7 @@ PackageVersion: 1.0.0
 PackageFileName: ./html/noc-ultra-v<VERS.MAJ.MIN.PATCH>.html
 PackageDownloadLocation: NONE
 FilesAnalyzed: false
-PackageVerificationCode: [Hash-deiner-Datei]
+PackageVerificationCode: [Hash]
 PackageLicenseConcluded: Apache 2.0
 PackageCopyrightText: (c) 2026 by TThomas Walloschke artkeller@gmx.de
 PackageSummary: Minimale i18n-Logik ohne externe Abhängigkeiten.
