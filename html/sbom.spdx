@@ -1,34 +1,34 @@
 ##### Dokument-Header
 SPDXVersion: SPDX-2.3
 DataLicense: CC0-1.0
-DocumentNamespace: https://dein-projekt.de
-DocumentName: Project-BackToRoots-SBOM
-Creator: Person: Dein Name oder Team
+DocumentNamespace: https://github.com/NOC-Ultra-Smart-Panel/
+DocumentName: Project-SBOM
+Creator: Person: Thomas Walloschke artkeller@gmx.de
 Created: 2024-05-22T10:00:00Z
 
-##### Paket 1: Der i18n-Core (Dein auditierter Code)
-PackageName: custom-i18n-engine
+##### Paket 1: noc-ultra
+PackageName: noc-ultra-i18n-engine-embedded-code
 SPDXID: SPDXRef-Package-i18n-Core
 PackageVersion: 1.0.0
-PackageFileName: ./src/core/i18n.js
+PackageFileName: ./html/noc-ultra-v<VERS.MAJ.MIN.PATCH>.html
 PackageDownloadLocation: NONE
 FilesAnalyzed: false
 PackageVerificationCode: [Hash-deiner-Datei]
-PackageLicenseConcluded: MIT
-PackageCopyrightText: <Copyright Dein Unternehmen/Name>
+PackageLicenseConcluded: Apache 2.0
+PackageCopyrightText: (c) 2026 by TThomas Walloschke artkeller@gmx.de
 PackageSummary: Minimale i18n-Logik ohne externe Abhängigkeiten.
 PackageComment: Händisch auditierter Code zur Erfüllung der CRA-Sorgfaltspflicht.
 
 ##### Paket 2: Die l10n-Daten (Die Sprach-Assets)
-PackageName: project-l10n-data
+PackageName: oc-ultra-l10n-data
 SPDXID: SPDXRef-Package-l10n-Assets
 PackageVersion: 1.0.0
-PackageFileName: ./assets/l10n/
+PackageFileName: ./assets/l10n/noc_ultra_l10_<CODE>.json
 PackageDownloadLocation: NONE
 FilesAnalyzed: false
 PackageLicenseConcluded: CC-BY-4.0
-PackageCopyrightText: <Copyright Dein Unternehmen/Name>
-PackageSummary: Lokalisierungs-Strings (JSON/JS) für DE und EN.
+PackageCopyrightText: (c) 2026 by Thomas Walloschke artkeller@gmx.de
+PackageSummary: Lokalisierungs-Strings (JSON) für 27 Sparchen.
 
 ##### Beziehungen (Relationship)
 Relationship: SPDXRef-Document DESCRIBES SPDXRef-Package-i18n-Core
