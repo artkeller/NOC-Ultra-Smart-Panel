@@ -1,22 +1,35 @@
 #!/bin/bash
 
-# Pfade zu deinen Dateien
-I18N_FILE="./html/noc_ultra_v4_7_5_0.html"
+# Konfiguration
+CORE_FILE="./html/noc_ultra_v.html"
+L10N_DIR="./assets/l10n"
 SPDX_FILE="./bom.spdx"
 
-# 1. SHA1-Hash generieren (SPDX Standard nutzt oft SHA1 für den VerificationCode)
-# Wir nehmen nur den Hash-Wert, ohne den Dateinamen
-NEW_HASH=$(sha1sum "$I18N_FILE" | awk '{ print $1 }')
+# 1. Hash für den eingebetteten Code (Core)
+CORE_HASH=$(sha1sum "$CORE_FILE" | awk '{ print $1 }')
 
-# 2. Den alten Hash im SPDX-File durch den neuen ersetzen
-# Nutzt sed, um die Zeile mit 'PackageVerificationCode:' zu finden und zu updaten
-if grep -q "PackageVerificationCode:" "$SPDX_FILE"; then
-    sed -i "s/PackageVerificationCode: .*/PackageVerificationCode: $NEW_HASH/" "$SPDX_FILE"
-    echo "✅ SPDX aktualisiert: i18n-Core Hash ist jetzt $NEW_HASH"
-else
-    echo "❌ Fehler: 'PackageVerificationCode:' wurde in $SPDX_FILE nicht gefunden."
-fi
+# 2. Sammel-Hash für alle l10n JSON-Dateien
+# Wir sortieren die Dateiliste, damit der Hash deterministisch bleibt
+L10N_HASH=$(find "$L10N_DIR" -name "*.json" -type f -print0 | sort -z | xargs -0 sha1sum | sha1sum | awk '{ print $1 }')
 
-# 3. Optional: Zeitstempel aktualisieren
+# 3. Zeitstempel generieren
 CURRENT_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-sed -i "s/Created: .*/Created: $CURRENT_DATE/" "$SPDX_FILE"
+
+# 4. SPDX-Datei aktualisieren
+if [ -f "$SPDX_FILE" ]; then
+    # Update i18n-Core Hash (PackageVerificationCode nach der entsprechenden SPDXID)
+    # Wir nutzen einen Trick mit sed, um den richtigen Block zu treffen:
+    sed -i "/SPDXRef-Package-i18n-Core/,/PackageVerificationCode/ s/PackageVerificationCode: .*/PackageVerificationCode: $CORE_HASH/" "$SPDX_FILE"
+    
+    # Update l10n-Assets Hash
+    sed -i "/SPDXRef-Package-l10n-Assets/,/PackageVerificationCode/ s/PackageVerificationCode: .*/PackageVerificationCode: $L10N_HASH/" "$SPDX_FILE"
+    
+    # Update Zeitstempel
+    sed -i "s/Created: .*/Created: $CURRENT_DATE/" "$SPDX_FILE"
+    
+    echo "✅ SBOM aktualisiert:"
+    echo "   Core ($CORE_FILE): $CORE_HASH"
+    echo "   Data ($L10N_DIR/*.json): $L10N_HASH"
+else
+    echo "❌ Fehler: $SPDX_FILE nicht gefunden!"
+fi
