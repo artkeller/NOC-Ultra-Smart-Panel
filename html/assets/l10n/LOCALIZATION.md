@@ -15,7 +15,7 @@ Nachfolgend die Namen von 28 Sprachdateien (JSON-Format), die auf dem Server im 
 - language_et.json -> noc_ultra_l10n_et.json,
 - language_fi.json -> noc_ultra_l10n_fi.json,
 - language_fr.json -> noc_ultra_l10n_fr.json,
-- (ga fehlt)          noc_ultra_l10n_ga.json,
+- (ga fehlt)       -> noc_ultra_l10n_ga.json,
 - language_hr.json -> noc_ultra_l10n_hr.json,
 - language_hu.json -> noc_ultra_l10n_hu.json,
 - language_it.json -> noc_ultra_l10n_it.json,
