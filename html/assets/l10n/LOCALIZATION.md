@@ -4,7 +4,7 @@ Nachfolgend die Namen von 27 Sprachdateien (JSON-Format), die auf dem Server im 
 
 ## Dateinamen 
 
- Version 4.7.5.0   -> Version 4.7.5.3 (l10n-schema)
+ Version 4.7.5.0/2   -> Version 4.7.5.3 (l10n-schema)
 - language_de.json -> noc_ultra_l10n_de.json,
 - language_en.json -> noc_ultra_l10n_en.json,
 - language_bg.json -> noc_ultra_l10n_bg.json,
