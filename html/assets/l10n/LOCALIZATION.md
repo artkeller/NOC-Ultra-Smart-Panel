@@ -41,3 +41,54 @@ Jede Datei enthält die exakt gleichen Schlüssel wie das defaultTranslations-Ob
 Die Übersetzungen sind vollständig und entsprechen den in der vorherigen Version eingepflegten multilingualen Texten. 
 
 Die Dateien sind direkt verwendbar.
+
+## Struktur (v4.7.5.3)
+
+```json
+
+  // ========== Eingebettete Default-Sprache (Englisch) – Fallback ==========
+  const defaultTranslations = {
+    langCode: "en",
+    langNameNative: "English",
+    langNameEnglish: "English",
+    langAuto: "Auto (Browser)",
+    add: "Add Monitor",
+    favs: "Favorites",
+    monitors: "Monitors",
+    placeholder: "Enter URL...",
+    err_url: "invalid",
+    err_net: "Network Error",
+    err_empty: "URL empty",
+    err_offline: "no network",
+    online: "OK",
+    loading: "init",
+    start: "Start",
+    warn_http: "⚠️ Insecure HTTP URL – click again to add it anyway.",
+    menuTitle: "Menu",
+    menuLang: "🌐 Language",
+    menuMode: "🎛️ Mode",
+    menuSettings: "⚙️ Settings",
+    menuVersion: "📌 Version",
+    close: "Close",
+    footerImpressum: "Imprint",
+    footerDatenschutz: "Privacy",
+    footerNutzung: "Terms",
+    footerCookies: "Cookies",
+    autoLabel: "Auto-Fav",
+    autoFavTitle: "Auto-Favorite: Valid URLs are automatically added to favorites",
+    favMenuDefault: "↺ Load default",
+    favMenuSave: "💾 Save",
+    favMenuLoad: "📂 Load",
+    favMenuDelete: "🗑️ Delete all",
+    monMenuSave: "💾 Save monitors",
+    monMenuLoadAdd: "📂 Add monitors",
+    monMenuLoadSub: "📂 Substitute monitors",
+    monMenuDelete: "🗑️ Delete all monitors",
+    monDeleteConfirm: "Delete all monitors?",
+    tooltipMenu: "Menu",
+    tooltipFavMenu: "Favorites menu",
+    tooltipMonitorMenu: "Monitors menu"
+  };
+
+
+```
