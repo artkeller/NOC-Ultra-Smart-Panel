@@ -44,7 +44,7 @@ Die Dateien sind direkt verwendbar.
 
 ## Struktur (v4.7.5.3)
 
-```json
+```javascript
 
   // ========== Eingebettete Default-Sprache (Englisch) – Fallback ==========
   const defaultTranslations = {
